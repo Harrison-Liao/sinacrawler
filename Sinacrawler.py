@@ -27,7 +27,7 @@ def core(urleach):
         data = [date,title,content2]
         writer.writerow(data)
     csvfile.close()
-pageurl = 'http://blog.sina.com.cn/s/articlelist_1596566922_0_1.html'
+pageurl = 'http://blog.sina.com.cn/s/articlelist_1596566922_0_1.html' #Blog Page Url
 print pageurl
 csvfile = file('test.csv','a+')
 html = requests.get(pageurl)
